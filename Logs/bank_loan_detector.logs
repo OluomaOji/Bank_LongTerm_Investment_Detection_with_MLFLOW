@@ -1,0 +1,27 @@
+2025-03-08 12:21:35,368-__main__-INFO-Data Ingestion Process Commences
+2025-03-08 12:23:02,638-__main__-INFO-Data Ingestion Process Commences
+2025-03-08 12:23:02,955-__main__-INFO-Reading Dataset as a DataFrame
+2025-03-08 12:24:50,551-__main__-INFO-Data Ingestion Process Commences
+2025-03-08 12:24:50,868-__main__-INFO-Reading Dataset as a DataFrame
+2025-03-08 12:24:50,984-__main__-INFO-Saving Dataset as a CSV file
+2025-03-08 12:25:52,772-__main__-INFO-Data Ingestion Process Commences
+2025-03-08 12:25:53,154-__main__-INFO-Reading Dataset as a DataFrame
+2025-03-08 12:25:53,286-__main__-INFO-Saving Dataset as a CSV file
+2025-03-08 12:27:44,722-__main__-INFO-Data Ingestion Process Commences
+2025-03-08 12:27:45,003-__main__-INFO-Reading Dataset as a DataFrame
+2025-03-08 12:27:45,117-__main__-INFO-Saving Dataset as a CSV file
+2025-03-08 22:28:21,887-__main__-INFO-Loading the Business Marketing CSV dataset
+2025-03-08 22:29:29,917-__main__-INFO-Loading the Business Marketing CSV dataset
+2025-03-08 22:34:28,216-__main__-INFO-Loading the Business Marketing CSV dataset
+2025-03-08 22:34:28,293-__main__-INFO-Feature Engineering Completed
+2025-03-08 22:34:28,636-__main__-INFO-Data Preprocessing Completed
+2025-03-08 22:37:18,014-__main__-INFO-Loading the Business Marketing CSV dataset
+2025-03-08 22:46:30,182-__main__-INFO-Loading the Business Marketing CSV dataset
+2025-03-08 22:46:30,460-__main__-INFO-Feature Engineering Completed
+2025-03-08 22:46:31,649-__main__-INFO-Data Preprocessing Completed
+2025-03-08 22:48:38,788-__main__-INFO-Loading the Business Marketing CSV dataset
+2025-03-08 22:48:39,028-__main__-INFO-Feature Engineering Completed
+2025-03-08 22:48:39,644-__main__-INFO-Data Preprocessing Completed
+2025-03-08 22:50:35,353-__main__-INFO-Loading the Business Marketing CSV dataset
+2025-03-08 22:50:35,516-__main__-INFO-Feature Engineering Completed
+2025-03-08 22:50:36,461-__main__-INFO-Data Preprocessing Completed
