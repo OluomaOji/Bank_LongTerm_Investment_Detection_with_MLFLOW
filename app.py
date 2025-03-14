@@ -69,8 +69,8 @@ def load_model():
 
 model = load_model()
 
-st.title("Bank Marketing Deposit Prediction")
-st.write("Fill in the customer details below to predict whether they will subscribe to a deposit.")
+st.title("Bank Long Term Investment Prediction")
+st.write("Fill in the customer details below to predict whether are likely or unlikely to invest long term.")
 
 # Input Form 
 st.header("Customer Information")
