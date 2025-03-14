@@ -1,5 +1,6 @@
 # Bank Longterm Investment Detector
 
+https://banklongterminvestor.streamlit.app/
 An end-to-end machine learning project that predicts whether a bank client will invest longterm. The project covers data ingestion, transformation, model training, evaluation with explainability (using SHAP), and deployment through a Streamlit app. Experiment tracking is performed using MLflow, and CI/CD is set up via GitHub Actions.
 
 ## Table of Contents
