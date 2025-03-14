@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mac/Desktop/Bank_Loan_Detector/mlruns/542451182425732205/5bfa99d3f34d4d0895d282572c10cc60/artifacts
+end_time: 1741543910362
+entry_point_name: ''
+experiment_id: '542451182425732205'
+lifecycle_stage: active
+run_id: 5bfa99d3f34d4d0895d282572c10cc60
+run_name: Decision Tree
+run_uuid: 5bfa99d3f34d4d0895d282572c10cc60
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741543899375
+status: 3
+tags: []
+user_id: OluomaOji

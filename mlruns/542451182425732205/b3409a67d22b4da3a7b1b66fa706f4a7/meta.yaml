@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mac/Desktop/Bank_Loan_Detector/mlruns/542451182425732205/b3409a67d22b4da3a7b1b66fa706f4a7/artifacts
+end_time: 1741543806975
+entry_point_name: ''
+experiment_id: '542451182425732205'
+lifecycle_stage: active
+run_id: b3409a67d22b4da3a7b1b66fa706f4a7
+run_name: Logistic Regression
+run_uuid: b3409a67d22b4da3a7b1b66fa706f4a7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741543786597
+status: 3
+tags: []
+user_id: OluomaOji

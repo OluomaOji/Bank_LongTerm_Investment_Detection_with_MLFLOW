@@ -4,3 +4,7 @@ matplotlib
 seaborn
 liac-arff
 scikit-learn
+mlflow
+joblib
+streamlit
+shap

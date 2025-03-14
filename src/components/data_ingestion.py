@@ -22,23 +22,21 @@ class DataIngestion:
         """
         logging.info("Data Ingestion Process Commences")
         try:
-            # Loading the Dataset
+            #1. Load the ARFF dataset from the configured file path.
             with open(self.data_ingestion_config.data_path,"r") as f:
                  dataset=arff.load(f)
 
+            #2. Convert the ARFF data to a pandas DataFrame.
             df = pd.DataFrame(dataset['data'],columns=[attr[0] for attr in dataset['attributes']])
             logging.info("Reading Dataset as a DataFrame")
 
-            # Saving the Dataset in the Raw Data Path as a CSV file
+            #3. Saving the Dataset in the Raw Data Path as a CSV file
             to_csv = df.to_csv(self.data_ingestion_config.raw_data_path,index=False)
             logging.info("Saving Dataset as a CSV file")
 
+            # Return the path or CSV output as needed
             return to_csv
 
         except Exception as e:
             raise CustomException(e,sys)
         
-if __name__ == "__main__":
-    ingestion = DataIngestion()
-    csv_path = ingestion.initiiate_data_ingestion()
-

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/mac/Desktop/Bank_Loan_Detector/mlruns/542451182425732205/918bd4f18ace48b28dd7d92d02a0c519/artifacts
+end_time: 1741543899365
+entry_point_name: ''
+experiment_id: '542451182425732205'
+lifecycle_stage: active
+run_id: 918bd4f18ace48b28dd7d92d02a0c519
+run_name: SVM (RBF)
+run_uuid: 918bd4f18ace48b28dd7d92d02a0c519
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1741543822617
+status: 3
+tags: []
+user_id: OluomaOji

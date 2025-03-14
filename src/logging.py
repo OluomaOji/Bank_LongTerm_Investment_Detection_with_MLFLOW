@@ -11,7 +11,7 @@ logging.basicConfig(
     level= logging.INFO,
     format='%(asctime)s-%(name)s-%(levelname)s-%(message)s',
     handlers=[
-        logging.FileHandler(os.path.join(Log_dir,"bank_loan_detector.logs")),
+        logging.FileHandler(os.path.join(Log_dir,"bank_longterm_investment_detector.logs")),
         logging.StreamHandler()
     ]
 )
