@@ -72,7 +72,7 @@ model = load_model()
 st.title("Bank Marketing Deposit Prediction")
 st.write("Fill in the customer details below to predict whether they will subscribe to a deposit.")
 
-# --- Input Form ---
+# Input Form 
 st.header("Customer Information")
 
 # Numerical Inputs
@@ -122,7 +122,7 @@ input_df = pd.DataFrame(input_dict)
 st.write("### Input Summary")
 st.write(input_df)
 
-# --- Data Preprocessing (One-Hot Encoding) ---
+# Data Preprocessing (One-Hot Encoding)
 # List of categorical columns
 categorical_columns = ["job", "marital", "education", "default", "housing", "loan", "contact", "month", "poutcome"]
 
@@ -142,7 +142,7 @@ input_transformed = input_transformed.reindex(columns=expected_features, fill_va
 st.write("### Transformed Input for Prediction")
 st.write(input_transformed)
 
-# --- Prediction ---
+# Prediction
 if st.button("Predict"):
     prediction = model.predict(input_transformed)[0]
     

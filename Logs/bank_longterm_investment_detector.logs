@@ -1,0 +1,378 @@
+2025-03-14 11:32:41,024-__main__-INFO-====== Starting the Pipeline ========
+2025-03-14 11:32:41,026-__main__-INFO-Starting Data Ingestion
+2025-03-14 11:32:41,027-src.components.data_ingestion-INFO-Data Ingestion Process Commences
+2025-03-14 11:32:41,407-src.components.data_ingestion-INFO-Reading Dataset as a DataFrame
+2025-03-14 11:32:41,544-src.components.data_ingestion-INFO-Saving Dataset as a CSV file
+2025-03-14 11:32:41,558-__main__-INFO-Data Ingestion completed. Raw data path: None
+2025-03-14 11:32:41,559-__main__-INFO-Starting Data Transformation...
+2025-03-14 11:32:41,700-src.components.data_transformation-INFO-Loading the Business Marketing CSV dataset
+2025-03-14 11:32:41,835-src.components.data_transformation-INFO-Feature Engineering Completed
+2025-03-14 11:32:41,859-src.components.data_transformation-INFO-Dataset split into train and test sets.
+2025-03-14 11:32:42,661-src.components.data_transformation-INFO-Train dataset saved to artifacts/train_data.csv
+2025-03-14 11:32:42,662-src.components.data_transformation-INFO-Test dataset saved to artifacts/test_data.csv
+2025-03-14 11:32:42,667-__main__-INFO-Data Transformation completed. Transformed data path: ('artifacts/train_data.csv', 'artifacts/test_data.csv')
+2025-03-14 11:32:42,668-__main__-INFO-Starting Model Training...
+2025-03-14 11:32:42,869-src.components.model_training-INFO-Train/Test datasets loaded successfully.
+2025-03-14 11:32:43,969-src.components.model_training-INFO-
+======= Training Modle: Logistic Regression ======
+2025-03-14 11:32:47,491-src.components.model_training-INFO-Model: Logistic Regression | Accuracy: 0.8298 | F1: 0.8161 | ROC-AUC: 0.9064256123557093
+2025-03-14 11:32:47,494-src.components.model_training-INFO-Confusion Matrix:
+[[1010  165]
+ [ 215  843]]
+2025-03-14 11:32:47,495-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.86      0.84      1175
+           1       0.84      0.80      0.82      1058
+
+    accuracy                           0.83      2233
+   macro avg       0.83      0.83      0.83      2233
+weighted avg       0.83      0.83      0.83      2233
+
+2025-03-14 11:33:24,306-src.components.model_training-INFO-
+======= Training Modle: Random Forest ======
+2025-03-14 11:33:28,046-src.components.model_training-INFO-Model: Random Forest | Accuracy: 0.8603 | F1: 0.8578 | ROC-AUC: 0.9195101154325704
+2025-03-14 11:33:28,047-src.components.model_training-INFO-Confusion Matrix:
+[[980 195]
+ [117 941]]
+2025-03-14 11:33:28,047-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.89      0.83      0.86      1175
+           1       0.83      0.89      0.86      1058
+
+    accuracy                           0.86      2233
+   macro avg       0.86      0.86      0.86      2233
+weighted avg       0.86      0.86      0.86      2233
+
+2025-03-14 11:34:20,428-src.components.model_training-INFO-
+======= Training Modle: SVM (RBF) ======
+2025-03-14 11:36:08,754-src.components.model_training-INFO-Model: SVM (RBF) | Accuracy: 0.8419 | F1: 0.8304 | ROC-AUC: 0.9130040622611912
+2025-03-14 11:36:08,765-src.components.model_training-INFO-Confusion Matrix:
+[[1016  159]
+ [ 194  864]]
+2025-03-14 11:36:08,765-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.86      0.85      1175
+           1       0.84      0.82      0.83      1058
+
+    accuracy                           0.84      2233
+   macro avg       0.84      0.84      0.84      2233
+weighted avg       0.84      0.84      0.84      2233
+
+2025-03-14 11:40:18,957-__main__-INFO-====== Starting the Pipeline ========
+2025-03-14 11:40:18,958-__main__-INFO-Starting Data Ingestion
+2025-03-14 11:40:18,958-src.components.data_ingestion-INFO-Data Ingestion Process Commences
+2025-03-14 11:40:19,237-src.components.data_ingestion-INFO-Reading Dataset as a DataFrame
+2025-03-14 11:40:19,338-src.components.data_ingestion-INFO-Saving Dataset as a CSV file
+2025-03-14 11:40:19,353-__main__-INFO-Data Ingestion completed. Raw data path: None
+2025-03-14 11:40:19,353-__main__-INFO-Starting Data Transformation...
+2025-03-14 11:40:19,467-src.components.data_transformation-INFO-Loading the Business Marketing CSV dataset
+2025-03-14 11:40:19,643-src.components.data_transformation-INFO-Feature Engineering Completed
+2025-03-14 11:40:19,670-src.components.data_transformation-INFO-Dataset split into train and test sets.
+2025-03-14 11:40:20,385-src.components.data_transformation-INFO-Train dataset saved to artifacts/train_data.csv
+2025-03-14 11:40:20,386-src.components.data_transformation-INFO-Test dataset saved to artifacts/test_data.csv
+2025-03-14 11:40:20,390-__main__-INFO-Data Transformation completed. Transformed data path: ('artifacts/train_data.csv', 'artifacts/test_data.csv')
+2025-03-14 11:40:20,391-__main__-INFO-Starting Model Training...
+2025-03-14 11:40:20,590-src.components.model_training-INFO-Train/Test datasets loaded successfully.
+2025-03-14 11:40:21,072-src.components.model_training-INFO-
+======= Training Modle: Logistic Regression ======
+2025-03-14 11:40:23,359-src.components.model_training-INFO-Model: Logistic Regression | Accuracy: 0.8298 | F1: 0.8161 | ROC-AUC: 0.9064256123557093
+2025-03-14 11:40:23,360-src.components.model_training-INFO-Confusion Matrix:
+[[1010  165]
+ [ 215  843]]
+2025-03-14 11:40:23,361-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.86      0.84      1175
+           1       0.84      0.80      0.82      1058
+
+    accuracy                           0.83      2233
+   macro avg       0.83      0.83      0.83      2233
+weighted avg       0.83      0.83      0.83      2233
+
+2025-03-14 11:41:12,074-src.components.model_training-INFO-
+======= Training Modle: Random Forest ======
+2025-03-14 11:41:16,147-src.components.model_training-INFO-Model: Random Forest | Accuracy: 0.8603 | F1: 0.8578 | ROC-AUC: 0.9195101154325704
+2025-03-14 11:41:16,150-src.components.model_training-INFO-Confusion Matrix:
+[[980 195]
+ [117 941]]
+2025-03-14 11:41:16,150-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.89      0.83      0.86      1175
+           1       0.83      0.89      0.86      1058
+
+    accuracy                           0.86      2233
+   macro avg       0.86      0.86      0.86      2233
+weighted avg       0.86      0.86      0.86      2233
+
+2025-03-14 11:42:25,300-src.components.model_training-INFO-
+======= Training Modle: SVM (RBF) ======
+2025-03-14 11:44:14,581-src.components.model_training-INFO-Model: SVM (RBF) | Accuracy: 0.8419 | F1: 0.8304 | ROC-AUC: 0.9130040622611912
+2025-03-14 11:44:14,590-src.components.model_training-INFO-Confusion Matrix:
+[[1016  159]
+ [ 194  864]]
+2025-03-14 11:44:14,590-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.86      0.85      1175
+           1       0.84      0.82      0.83      1058
+
+    accuracy                           0.84      2233
+   macro avg       0.84      0.84      0.84      2233
+weighted avg       0.84      0.84      0.84      2233
+
+2025-03-14 11:45:21,753-src.components.model_training-INFO-
+======= Training Modle: Decision Tree ======
+2025-03-14 11:45:23,713-src.components.model_training-INFO-Model: Decision Tree | Accuracy: 0.7944 | F1: 0.7805 | ROC-AUC: 0.7932928447894462
+2025-03-14 11:45:23,714-src.components.model_training-INFO-Confusion Matrix:
+[[958 217]
+ [242 816]]
+2025-03-14 11:45:23,715-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.82      0.81      1175
+           1       0.79      0.77      0.78      1058
+
+    accuracy                           0.79      2233
+   macro avg       0.79      0.79      0.79      2233
+weighted avg       0.79      0.79      0.79      2233
+
+2025-03-14 11:45:49,895-src.components.model_training-INFO-
+Best Model: Random Forest with ROC-AUC: 0.9195
+2025-03-14 11:45:50,391-src.components.model_training-INFO-Best model saved to: artifacts/model.pkl
+2025-03-14 11:45:50,411-__main__-INFO-Model Training completed.
+2025-03-14 11:45:50,412-__main__-INFO-Starting Shap Explanation
+2025-03-14 11:45:50,469-src.explain.shap_explain-INFO-Loaded test dataset from: artifacts/test_data.csv
+2025-03-14 11:45:50,998-src.explain.shap_explain-INFO-Loaded best model from: artifacts/model.pkl
+2025-03-14 11:45:51,102-src.explain.shap_explain-INFO-Using SHAP TreeExplainer.
+2025-03-14 12:09:50,862-__main__-INFO-====== Starting the Pipeline ========
+2025-03-14 12:09:50,863-__main__-INFO-Starting Data Ingestion
+2025-03-14 12:09:50,863-src.components.data_ingestion-INFO-Data Ingestion Process Commences
+2025-03-14 12:09:51,253-src.components.data_ingestion-INFO-Reading Dataset as a DataFrame
+2025-03-14 12:09:51,375-src.components.data_ingestion-INFO-Saving Dataset as a CSV file
+2025-03-14 12:09:51,390-__main__-INFO-Data Ingestion completed. Raw data path: None
+2025-03-14 12:09:51,391-__main__-INFO-Starting Data Transformation...
+2025-03-14 12:09:51,484-src.components.data_transformation-INFO-Loading the Business Marketing CSV dataset
+2025-03-14 12:09:51,605-src.components.data_transformation-INFO-Feature Engineering Completed
+2025-03-14 12:09:51,638-src.components.data_transformation-INFO-Dataset split into train and test sets.
+2025-03-14 12:09:52,546-src.components.data_transformation-INFO-Train dataset saved to artifacts/train_data.csv
+2025-03-14 12:09:52,551-src.components.data_transformation-INFO-Test dataset saved to artifacts/test_data.csv
+2025-03-14 12:09:52,560-__main__-INFO-Data Transformation completed. Transformed data path: ('artifacts/train_data.csv', 'artifacts/test_data.csv')
+2025-03-14 12:09:52,560-__main__-INFO-Starting Model Training...
+2025-03-14 12:09:52,834-src.components.model_training-INFO-Train/Test datasets loaded successfully.
+2025-03-14 12:09:53,636-src.components.model_training-INFO-
+======= Training Modle: Logistic Regression ======
+2025-03-14 12:09:57,027-src.components.model_training-INFO-Model: Logistic Regression | Accuracy: 0.8298 | F1: 0.8161 | ROC-AUC: 0.9064256123557093
+2025-03-14 12:09:57,028-src.components.model_training-INFO-Confusion Matrix:
+[[1010  165]
+ [ 215  843]]
+2025-03-14 12:09:57,029-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.86      0.84      1175
+           1       0.84      0.80      0.82      1058
+
+    accuracy                           0.83      2233
+   macro avg       0.83      0.83      0.83      2233
+weighted avg       0.83      0.83      0.83      2233
+
+2025-03-14 12:10:24,629-src.components.model_training-INFO-
+======= Training Modle: Random Forest ======
+2025-03-14 12:10:30,357-src.components.model_training-INFO-Model: Random Forest | Accuracy: 0.8603 | F1: 0.8578 | ROC-AUC: 0.9195101154325704
+2025-03-14 12:10:30,359-src.components.model_training-INFO-Confusion Matrix:
+[[980 195]
+ [117 941]]
+2025-03-14 12:10:30,359-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.89      0.83      0.86      1175
+           1       0.83      0.89      0.86      1058
+
+    accuracy                           0.86      2233
+   macro avg       0.86      0.86      0.86      2233
+weighted avg       0.86      0.86      0.86      2233
+
+2025-03-14 12:11:22,749-src.components.model_training-INFO-
+======= Training Modle: SVM (RBF) ======
+2025-03-14 12:14:33,408-__main__-INFO-====== Starting the Pipeline ========
+2025-03-14 12:14:33,410-__main__-INFO-Starting Data Ingestion
+2025-03-14 12:14:33,410-src.components.data_ingestion-INFO-Data Ingestion Process Commences
+2025-03-14 12:14:33,722-src.components.data_ingestion-INFO-Reading Dataset as a DataFrame
+2025-03-14 12:14:33,834-src.components.data_ingestion-INFO-Saving Dataset as a CSV file
+2025-03-14 12:14:33,845-__main__-INFO-Data Ingestion completed. Raw data path: None
+2025-03-14 12:14:33,846-__main__-INFO-Starting Data Transformation...
+2025-03-14 12:14:33,964-src.components.data_transformation-INFO-Loading the Business Marketing CSV dataset
+2025-03-14 12:14:34,103-src.components.data_transformation-INFO-Feature Engineering Completed
+2025-03-14 12:14:34,148-src.components.data_transformation-INFO-Dataset split into train and test sets.
+2025-03-14 12:14:35,235-src.components.data_transformation-INFO-Train dataset saved to artifacts/train_data.csv
+2025-03-14 12:14:35,235-src.components.data_transformation-INFO-Test dataset saved to artifacts/test_data.csv
+2025-03-14 12:14:35,240-__main__-INFO-Data Transformation completed. Transformed data path: ('artifacts/train_data.csv', 'artifacts/test_data.csv')
+2025-03-14 12:14:35,240-__main__-INFO-Starting Model Training...
+2025-03-14 12:14:35,476-src.components.model_training-INFO-Train/Test datasets loaded successfully.
+2025-03-14 12:14:35,816-src.components.model_training-INFO-
+======= Training Modle: Logistic Regression ======
+2025-03-14 12:14:38,343-src.components.model_training-INFO-Model: Logistic Regression | Accuracy: 0.8298 | F1: 0.8161 | ROC-AUC: 0.9064256123557093
+2025-03-14 12:14:38,346-src.components.model_training-INFO-Confusion Matrix:
+[[1010  165]
+ [ 215  843]]
+2025-03-14 12:14:38,353-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.86      0.84      1175
+           1       0.84      0.80      0.82      1058
+
+    accuracy                           0.83      2233
+   macro avg       0.83      0.83      0.83      2233
+weighted avg       0.83      0.83      0.83      2233
+
+2025-03-14 12:15:08,760-src.components.model_training-INFO-
+======= Training Modle: Random Forest ======
+2025-03-14 12:15:12,923-src.components.model_training-INFO-Model: Random Forest | Accuracy: 0.8603 | F1: 0.8578 | ROC-AUC: 0.9195101154325704
+2025-03-14 12:15:12,924-src.components.model_training-INFO-Confusion Matrix:
+[[980 195]
+ [117 941]]
+2025-03-14 12:15:12,924-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.89      0.83      0.86      1175
+           1       0.83      0.89      0.86      1058
+
+    accuracy                           0.86      2233
+   macro avg       0.86      0.86      0.86      2233
+weighted avg       0.86      0.86      0.86      2233
+
+2025-03-14 12:16:02,333-src.components.model_training-INFO-
+======= Training Modle: SVM (RBF) ======
+2025-03-14 12:17:15,314-src.components.model_training-INFO-Model: SVM (RBF) | Accuracy: 0.8419 | F1: 0.8304 | ROC-AUC: 0.9130040622611912
+2025-03-14 12:17:15,319-src.components.model_training-INFO-Confusion Matrix:
+[[1016  159]
+ [ 194  864]]
+2025-03-14 12:17:15,320-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.86      0.85      1175
+           1       0.84      0.82      0.83      1058
+
+    accuracy                           0.84      2233
+   macro avg       0.84      0.84      0.84      2233
+weighted avg       0.84      0.84      0.84      2233
+
+2025-03-14 12:18:13,398-src.components.model_training-INFO-
+======= Training Modle: Decision Tree ======
+2025-03-14 12:18:15,197-src.components.model_training-INFO-Model: Decision Tree | Accuracy: 0.7944 | F1: 0.7805 | ROC-AUC: 0.7932928447894462
+2025-03-14 12:18:15,198-src.components.model_training-INFO-Confusion Matrix:
+[[958 217]
+ [242 816]]
+2025-03-14 12:18:15,198-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.82      0.81      1175
+           1       0.79      0.77      0.78      1058
+
+    accuracy                           0.79      2233
+   macro avg       0.79      0.79      0.79      2233
+weighted avg       0.79      0.79      0.79      2233
+
+2025-03-14 12:18:39,711-src.components.model_training-INFO-
+Best Model: Random Forest with ROC-AUC: 0.9195
+2025-03-14 12:18:39,982-src.components.model_training-INFO-Best model saved to: artifacts/model.pkl
+2025-03-14 12:18:39,994-__main__-INFO-Model Training completed.
+2025-03-14 12:18:39,994-__main__-INFO-Starting Shap Explanation
+2025-03-14 12:18:40,039-src.explain.shap_explain-INFO-Loaded test dataset from: artifacts/test_data.csv
+2025-03-14 12:18:40,249-src.explain.shap_explain-INFO-Loaded best model from: artifacts/model.pkl
+2025-03-14 12:18:40,347-src.explain.shap_explain-INFO-Using SHAP TreeExplainer.
+2025-03-14 12:37:03,735-__main__-INFO-Loaded test dataset from: artifacts/test_data.csv
+2025-03-14 12:37:04,070-__main__-INFO-Loaded best model from: artifacts/model.pkl
+2025-03-14 12:37:04,207-__main__-INFO-Using SHAP TreeExplainer.
+2025-03-14 12:51:54,018-__main__-INFO-====== Starting the Pipeline ========
+2025-03-14 12:51:54,018-__main__-INFO-Starting Data Ingestion
+2025-03-14 12:51:54,019-src.components.data_ingestion-INFO-Data Ingestion Process Commences
+2025-03-14 12:51:54,282-src.components.data_ingestion-INFO-Reading Dataset as a DataFrame
+2025-03-14 12:51:54,386-src.components.data_ingestion-INFO-Saving Dataset as a CSV file
+2025-03-14 12:51:54,396-__main__-INFO-Data Ingestion completed. Raw data path: None
+2025-03-14 12:51:54,397-__main__-INFO-Starting Data Transformation...
+2025-03-14 12:51:54,578-src.components.data_transformation-INFO-Loading the Business Marketing CSV dataset
+2025-03-14 12:51:54,711-src.components.data_transformation-INFO-Feature Engineering Completed
+2025-03-14 12:51:54,738-src.components.data_transformation-INFO-Dataset split into train and test sets.
+2025-03-14 12:51:55,439-src.components.data_transformation-INFO-Train dataset saved to artifacts/train_data.csv
+2025-03-14 12:51:55,440-src.components.data_transformation-INFO-Test dataset saved to artifacts/test_data.csv
+2025-03-14 12:51:55,444-__main__-INFO-Data Transformation completed. Transformed data path: ('artifacts/train_data.csv', 'artifacts/test_data.csv')
+2025-03-14 12:51:55,445-__main__-INFO-Starting Model Training...
+2025-03-14 12:51:55,809-src.components.model_training-INFO-Train/Test datasets loaded successfully.
+2025-03-14 12:51:56,228-src.components.model_training-INFO-
+======= Training Modle: Logistic Regression ======
+2025-03-14 12:51:58,945-src.components.model_training-INFO-Model: Logistic Regression | Accuracy: 0.8298 | F1: 0.8161 | ROC-AUC: 0.9064256123557093
+2025-03-14 12:51:58,946-src.components.model_training-INFO-Confusion Matrix:
+[[1010  165]
+ [ 215  843]]
+2025-03-14 12:51:58,947-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.82      0.86      0.84      1175
+           1       0.84      0.80      0.82      1058
+
+    accuracy                           0.83      2233
+   macro avg       0.83      0.83      0.83      2233
+weighted avg       0.83      0.83      0.83      2233
+
+2025-03-14 12:52:26,831-src.components.model_training-INFO-
+======= Training Modle: Random Forest ======
+2025-03-14 12:52:31,052-src.components.model_training-INFO-Model: Random Forest | Accuracy: 0.8603 | F1: 0.8578 | ROC-AUC: 0.9195101154325704
+2025-03-14 12:52:31,054-src.components.model_training-INFO-Confusion Matrix:
+[[980 195]
+ [117 941]]
+2025-03-14 12:52:31,055-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.89      0.83      0.86      1175
+           1       0.83      0.89      0.86      1058
+
+    accuracy                           0.86      2233
+   macro avg       0.86      0.86      0.86      2233
+weighted avg       0.86      0.86      0.86      2233
+
+2025-03-14 12:53:20,897-src.components.model_training-INFO-
+======= Training Modle: SVM (RBF) ======
+2025-03-14 12:54:24,455-src.components.model_training-INFO-Model: SVM (RBF) | Accuracy: 0.8419 | F1: 0.8304 | ROC-AUC: 0.9130040622611912
+2025-03-14 12:54:24,468-src.components.model_training-INFO-Confusion Matrix:
+[[1016  159]
+ [ 194  864]]
+2025-03-14 12:54:24,468-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.84      0.86      0.85      1175
+           1       0.84      0.82      0.83      1058
+
+    accuracy                           0.84      2233
+   macro avg       0.84      0.84      0.84      2233
+weighted avg       0.84      0.84      0.84      2233
+
+2025-03-14 12:55:18,378-src.components.model_training-INFO-
+======= Training Modle: Decision Tree ======
+2025-03-14 12:55:20,391-src.components.model_training-INFO-Model: Decision Tree | Accuracy: 0.7944 | F1: 0.7805 | ROC-AUC: 0.7932928447894462
+2025-03-14 12:55:20,393-src.components.model_training-INFO-Confusion Matrix:
+[[958 217]
+ [242 816]]
+2025-03-14 12:55:20,394-src.components.model_training-INFO-Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.80      0.82      0.81      1175
+           1       0.79      0.77      0.78      1058
+
+    accuracy                           0.79      2233
+   macro avg       0.79      0.79      0.79      2233
+weighted avg       0.79      0.79      0.79      2233
+
+2025-03-14 12:55:44,573-src.components.model_training-INFO-
+Best Model: Random Forest with ROC-AUC: 0.9195
+2025-03-14 12:55:44,852-src.components.model_training-INFO-Best model saved to: artifacts/model.pkl
+2025-03-14 12:55:44,863-__main__-INFO-Model Training completed.
+2025-03-14 12:55:44,864-__main__-INFO-Starting Shap Explanation
+2025-03-14 12:55:44,904-src.explain.shap_explain-INFO-Loaded test dataset from: artifacts/test_data.csv
+2025-03-14 12:55:45,097-src.explain.shap_explain-INFO-Loaded best model from: artifacts/model.pkl
+2025-03-14 12:55:45,185-src.explain.shap_explain-INFO-Using SHAP TreeExplainer.
+2025-03-14 13:10:40,011-src.explain.shap_explain-INFO-SHAP summary plot saved to: artifacts/shap_summary.png
+2025-03-14 13:10:40,042-__main__-INFO-Shap Explanation completed.

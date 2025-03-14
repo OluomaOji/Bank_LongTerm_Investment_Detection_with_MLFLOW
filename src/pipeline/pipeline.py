@@ -16,6 +16,13 @@ class RunDataPipeline:
         pass
 
     def initiate_data_pipleine(self):
+        """
+        Initiation the Data Pipeline
+        1) Data Ingestion
+        2) Data Transformation
+        3) Model Training
+        4) Shap Explanation
+        """
         try:
             logging.info("====== Starting the Pipeline ========")
 
@@ -40,7 +47,8 @@ class RunDataPipeline:
             # 4) Shap Explanation
             logging.info("Starting Shap Explanation")
             explanation = ShapExplanation()
-            explanation_png = explanation.generate_shap_explanation()
+            explanation.generate_shap_explanation()
+            logging.info("Shap Explanation completed.")
 
         except Exception as e:
             CustomException(sys,e)

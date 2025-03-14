@@ -64,14 +64,10 @@ class ShapExplanation:
             plt.title("SHAP Feature Importance")
             
             # Define the path to save the SHAP summary plot.
-            shap_plot_path = self.shap_explanation_config
+            shap_plot_path = self.shap_explanation_config.shap_png
             plt.savefig(shap_plot_path)
             plt.close()
             logging.info(f"SHAP summary plot saved to: {shap_plot_path}")
 
         except Exception as e:
             raise CustomException(e, sys)
-
-if __name__ == "__main__":
-    explanation = ShapExplanation()
-    explanation_png = explanation.generate_shap_explanation()

@@ -136,9 +136,4 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e,sys)
 
-if __name__ == "__main__":
-    transformation = DataTransformation()
-    transformed_file = transformation.initialising_data_transformation()
-
-
 
