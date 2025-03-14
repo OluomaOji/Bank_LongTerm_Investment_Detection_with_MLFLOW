@@ -18,10 +18,8 @@ class DataTransformationConfig:
 @dataclass
 class ModelTrainingConfig:
     MLFLOW_TRACKING_URI: str= 'https://dagshub.com/OluomaOji/Bank_LongTerm_Investment_Detection_with_MLFLOW.mlflow' # MLflow tracking server URI.
-    #MLFLOW_TRACKING_USERNAME: str = os.environ.get("MLFLOW_TRACKING_USERNAME")# MLflow tracking username.
-    #MLFLOW_TRACKING_PASSWORD: str = os.environ.get("MLFLOW_TRACKING_PASSWORD")  # MLflow tracking password.
-    MLFLOW_TRACKING_USERNAME: str = "OluomaOji"
-    MLFLOW_TRACKING_PASSWORD: str = "760c90844a305272f1981be1879bceef551c3385"
+    MLFLOW_TRACKING_USERNAME: str = os.environ.get("MLFLOW_TRACKING_USERNAME")# MLflow tracking username.
+    MLFLOW_TRACKING_PASSWORD: str = os.environ.get("MLFLOW_TRACKING_PASSWORD")  # MLflow tracking password.
     train_path: str=os.path.join('artifacts','train_data.csv')# Path to the training data file.
     test_path: str=os.path.join('artifacts','test_data.csv') # Path to the testing data file.
     best_model: str=os.path.join('artifacts','model.pkl') # Path to save the best model after training.
