@@ -147,9 +147,9 @@ if st.button("Predict"):
     prediction = model.predict(input_transformed)[0]
     
     if prediction == 1:
-        st.success("Prediction: This customer is LIKELY to subscribe to a deposit.")
+        st.success("Prediction: This client is LIKELY to invest Long Term.")
     else:
-        st.warning("Prediction: This customer is UNLIKELY to subscribe to a deposit.")
+        st.warning("Prediction: This customer is UNLIKELY to invest Long Term.")
     
     if hasattr(model, "predict_proba"):
         probability = model.predict_proba(input_transformed)[0][1]
