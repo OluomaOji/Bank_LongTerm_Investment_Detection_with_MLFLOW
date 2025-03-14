@@ -14,11 +14,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python 3.10.0
+      - name: Set up Python 3.12.0
         uses: actions/setup-python@v4
         with:
-          python-version: 3.10.0
-          check-latest: false
+          python-version: 3.12.0
+          
 
       - name: Install Dependencies
         run: |
